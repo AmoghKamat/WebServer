@@ -118,3 +118,13 @@ table{
         height: 100px;
         margin-top: 10px;
 }
+
+input.error {
+    border: 1px solid red;
+}
+
+.output-errors{
+    display: block;
+    background-color: red;
+    color: white;
+}
