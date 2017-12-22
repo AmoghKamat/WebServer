@@ -1,15 +1,120 @@
-.wrapper{
-    width: 1000px;
+body{
+    font-family: 'Roboto Slab',Arial, sans-serif;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+
+.wrapper, .header-inner{
+    max-width: 1000px;
     margin :0 auto;
 }
 
 .header{
-    background-color: #d2d2d2;
+    overflow: hidden;
+    border-bottom: 1px solid #cccccc;
 }
 
-.sidebar{
-    background-color: #333333;
+.header .logo{
+    display: block;
+    text-indent: -999em;
+    float: left;
+    width: 166px;
+    height: 76px;
+    background: url(../image/logo.png) no-repeat 0 0;
 }
+
+/* sidebar-styling */
+
+.sidebar{
+    width: 250px;
+    float: left;
+
+}
+
+.sidebar li{
+    border-bottom: 1px solid #ffffff;
+}
+
+.sidebar li a{
+    display : block;
+    background-color: #333;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.sidebar li a:hover{
+    background-color: #cccccc;
+    color: #333;
+}
+
 .main{
-    background-color: aqua;
+    max-width: 700px;
+    float: right;
+}
+
+.navigation{
+    float: right;
+    display: table;
+
+}
+
+.navigation li{
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 40px;
+
+}
+
+.navigation button{
+    border : none;
+    background-color: black;
+    color: #ffffff;
+    padding: 3px;
+}
+.cars{
+    border: 1px solid #333;
+}
+
+th, td{
+     border: solid #333;
+     border-width: 0 1px 1px 0;
+     padding: 8px 10px;
+     text-align: left;
+}
+
+table{
+    border-collapse: collapse;
+}
+.contact{
+    width: 350px;
+}
+.contact input{
+    float:right;
+}
+.contact div{
+    margin-bottom: 20px;
+}
+.contact button{
+    border : none;
+    background-color: black;
+    color: #ffffff;
+    padding: 3px;
+    float:right;
+}
+
+#js-output{
+        background-color: #ccc;
+        border: 1px solid #333;
+        height: 100px;
+        margin-top: 10px;
 }

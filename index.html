@@ -8,24 +8,29 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="manifest" href="site.webmanifest">
         <link rel="apple-touch-icon" href="icon.png">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet"> 
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-        <div class="wrapper">
-            <div class="header">
-                <a href="#">logo</a>
+        <div class="header">
+            <div class="header-inner">
+                <a class="logo" href="#">logo</a>
 
-                <ul>
+                <ul class="navigation">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
+                
                     <li><a href="#">Contact Us</a></li>
+                    <li>
+                        <form action="#">
+                            <input type="text" placeholder="Search site">
+                            <button>Search</button> 
+                        </form>
+                    </li>
                 </ul>
-
-                <form action="#">
-                    <input type="text" placeholder="Search site">
-                    <button>Search</button> 
-                </form>
             </div>
+        </div>
+        <div class="wrapper">
             <div class="sidebar">
                     <ul>
                         <li><a href="#">Menu A</a></li>
@@ -38,8 +43,49 @@
                     <h1 class="my_Heading">Heading</h1>
                     <h2>Sub-Heading</h2>
                     <p>HTML5 Boilerplate helps you build fast, robust, and adaptable web apps or sites. 
-                        Kick-start your project with the combined knowledge and effort of 100s of developers, all in one little package.</p>
+                        Kick-start your project with the combined knowledge and effort of 100s of developers, 
+                        all in one little package.</p>
+                    
+                        <table class="cars">
+                            <tr>
+                                <th>Audi</th>
+                                <th>BMW</th>
+                                <th>Merc</th>
+                                <th>RR</th>
+                            </tr>
+                            <tr>
+                              <td>RS7</td>
+                              <td>M3</td>
+                              <td>c63</td>
+                              <td>Phantom</td>
+                            </tr>
+                        </table>
 
+                        <h3>form</h3>
+                        <p>
+                            Fill the Form.
+                        </p>
+                        <form class="contact" action="#">
+                            <div>
+                                <label for="name">Name</label>
+                                <input type="text" id="name" value="Amogh">
+                            </div>
+                            <div>
+                                <label for="address">Address</label>
+                                <input type="text" id="address">
+                            </div>
+                            <div>
+                                <label for="phone">Phone Number</label>
+                                <input type="number" id="phone">
+                            </div>
+                            <div>
+                                <button>Submit</button>
+                            </div>
+                        </form>
+                        <h6>output</h6>
+                        <div id="js-output">
+
+                    </div>
             </div>
         </div>
         
